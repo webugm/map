@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
     <style type="text/css">
       html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
     </style>
@@ -9,34 +11,6 @@
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn8jHrjyx0iHrr3uOrLIHio5uMImUCZgg">
     </script>
-
-    <!--
-			/*
-			 * Google map for contact form
-			 */
-			if ($('#mg-map').length) {
-
-			    var map = new GMaps({
-					el: '#mg-map',
-					lat: -37.81792,
-					lng: 144.96506,
-					zoom: 17
-				});
-
-				map.addMarker({
-					lat: -37.81792,
-					lng: 144.96506,
-					title: 'Map',
-					infoWindow: {
-						content: '<strong>Envato</strong><br>Level 13, 2 Elizabeth St, Melbourne<br>Victoria 3000 Australia'
-					}
-				});
-			}
-
-		})(jQuery);
-
-    -->
-
 
 
     <script type="text/javascript">
@@ -60,7 +34,5 @@
   	</div>
 
   	
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/jquery.min.js"></script>
   </body>
 </html>
