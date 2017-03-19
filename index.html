@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
+
     <style type="text/css">
       html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
     </style>
-
-    <!-- AIzaSyAn8jHrjyx0iHrr3uOrLIHio5uMImUCZgg -->
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn8jHrjyx0iHrr3uOrLIHio5uMImUCZgg">
     </script>
-
-
     <script type="text/javascript">
       function initialize() {
         var mapOptions = {
-          center: { lat: 23.009710, lng: 120.269257},
+          center: {lat: 23.009710, lng: 120.269257},
           zoom: 17
         };
         var map = new google.maps.Map(
             document.getElementById('map-canvas'),
             mapOptions);
-
       }
       google.maps.event.addDomListener(
           window, 'load', initialize);
     </script>
   </head>
   <body>
-  	<div style="width:80%;height:500px;">
-  		<div id="map-canvas"></div>  		
-  	</div>
 
-  	
+    <div style="text-align:center;">
+      <div style="margin:20px auto;">
+        <div id="mg-canvas" style="width:100%;height:500px;"></div>        
+      </div>
+    </div>
+  <div id="map-canvas"></div>
   </body>
 </html>
