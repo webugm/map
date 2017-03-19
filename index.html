@@ -10,10 +10,12 @@
     </script>
     <script type="text/javascript">
       function initialize() {
+
+        var uluru = {lat: 23.009710, lng: 120.269257};
         var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
-        };4
+          center: uluru,
+          zoom: 17
+        };
         var map = new google.maps.Map(
             document.getElementById('map-canvas'),
             mapOptions);
